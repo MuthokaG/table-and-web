@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 100%;
+              
+        }
+        
+
+        table, th, td {
+            border: 2px solid black;
+            
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+            border-style: outset;
+        }
+        th {
+            font-size: 24px;
+            text-align: center;
+        }
+        td {
+            font-size: 18px;
+        }
+        .header {
+            font-weight: bold;
+            text-align: center;
+        }
+        .end {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Table</h1>
+<h2>Rowspan and Colspan</h2>
+
+<table>
+    <tr>
+        <th class="header">Your Full Name</th>
+        <th class="header">Course Codes</th>
+        <th class="header">Status</th>
+    </tr>
+    <tr>
+        <td rowspan="2">My First Name is<br><strong>Muhammad</strong></td>
+        <td>IT 242</td>
+        <td rowspan="2">Completed</td>
+    </tr>
+    <tr>
+        <td>IT 445</td>
+    </tr>
+    <tr>
+        <td rowspan="2">My Second Name is<br><strong>Ali</strong>
+            <br>My Family Name is<br><strong>Al Shehri</strong></td> <!-- Combined names in one cell -->
+        <td>IT 241</td>
+        
+        <td rowspan="2">In Progress</td> <!-- Status spans both course codes -->
+    </tr>
+    <tr>
+        <td>IT 230</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="end">The End</td>
+    </tr>
+</table>
+
+</body>
+</html>
